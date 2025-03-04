@@ -49,5 +49,5 @@ ci cd repository for springboot
 ## Re build
     Success
 ## Tagging if not using build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}') the update with below
-    docker tag spring-boot-hello-world:latest 975050323630.dkr.ecr.us-east-1.amazonaws.com/revanth-spring-boot-hello:latest
+    docker tag revanth-spring-boot-hello:latest 975050323630.dkr.ecr.us-east-1.amazonaws.com/revanth-spring-boot-hello:latest
     
