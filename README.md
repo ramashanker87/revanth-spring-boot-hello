@@ -50,4 +50,8 @@ ci cd repository for springboot
     Success
 ## Tagging if not using build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}') the update with below
     docker tag revanth-spring-boot-hello:latest 975050323630.dkr.ecr.us-east-1.amazonaws.com/revanth-spring-boot-hello:latest
-    
+
+## Create ECS Service and Task infra
+```Bash
+    aws cloudformation deploy --template-file ecs-farget-cluster.yml  --stack-name revanth-cluster-hello --capabilities CAPABILITY_NAMED_IAM 
+```
